@@ -24,7 +24,7 @@ function App() {
       <Row sliderId='2' NavId='Trending' title="Trending Now" fetchUrl={requests.fetchTrending} />
       <Row sliderId='3' NavId='Top Rated' title="Top Rated" fetchUrl={requests.fetchTopRateMovies} />
       <Row sliderId='4' NavId='Action' title="Action Movies" fetchUrl={requests.fetchActionMovies} />
-      <Row sliderId='5' NavId='Horror'  title="Horror Movies" fetchUrl={requests.fetchHorrorMovies} />
+      {/* <Row sliderId='5' NavId='Horror'  title="Horror Movies" fetchUrl={requests.fetchHorrorMovies} /> */}
       <Row sliderId='6' NavId='romance'  title="romance Movies" fetchUrl={requests.fetchRomanceMovies} />
       <Row sliderId='7'  NavId='Documentaries' title="Documentaries Movies" fetchUrl={requests.fetchDocumentaries} />
      

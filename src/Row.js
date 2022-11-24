@@ -59,7 +59,7 @@ function Row({NavId,title, fetchUrl,isLargeRow,sliderId}) {
         return <img key={movie.id} 
         onClick ={()=>handleClick(movie)}
            className={`row_poster ${isLargeRow &&'row_posterLarge'}`}
-          src={`${imageBaseUrl}${isLargeRow ? movie.poster_path: movie.backdrop_path}`}
+          src={(movie.poster_path &&movie.backdrop_path)?`${imageBaseUrl}${isLargeRow ? movie.poster_path: movie.backdrop_path}`:"https://image.tmdb.org/t/p/original/m7tG5E1EbywuwTsl6hq990So0Bx.jpg" }
           alt={movie.name}
           />
         })}
